@@ -14,7 +14,7 @@ export const MockPhone = () => {
             {/* Real Screenshot Content */}
             <div className="relative h-full w-full bg-black overflow-hidden">
                 <Image
-                    src="/home-screen.png"
+                    src="/images/Screenshot_20260203_011028.jpg"
                     alt="MacroLens App Interface"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"

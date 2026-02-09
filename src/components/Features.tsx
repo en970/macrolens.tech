@@ -109,7 +109,7 @@ export const Features = () => {
                         title="Start Tracking"
                         description="Download now and try it for free. Snap a photo, AI counts for you."
                         icon={LucideImage}
-                        imageSrc="/images/download.png"
+                        imageSrc="/images/3.png"
                         delay={0.5}
                     />
                 </div>
