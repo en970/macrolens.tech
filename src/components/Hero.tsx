@@ -49,12 +49,12 @@ export const Hero = () => {
                                 <input
                                     type="email"
                                     placeholder="Enter your email"
-                                    className="flex-1 h-14 rounded-2xl glass px-5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all border-white/10"
+                                    className="flex-1 h-16 rounded-2xl glass px-5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all border-white/10"
                                     required
                                 />
                                 <button
                                     type="submit"
-                                    className="h-14 px-8 rounded-2xl bg-primary text-black font-bold hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 group shadow-xl shadow-primary/20"
+                                    className="h-16 px-8 rounded-2xl bg-primary text-black font-bold hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 group shadow-xl shadow-primary/20"
                                 >
                                     Join Waitlist
                                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
