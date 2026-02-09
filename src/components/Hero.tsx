@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MockPhone } from "./MockPhone";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, MessageSquarePlus } from "lucide-react";
 import Image from "next/image";
 
 export const Hero = () => {
@@ -60,6 +60,32 @@ export const Hero = () => {
                                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
                             </form>
+
+                            <div className="mt-8 pt-8 border-t border-white/5 w-full">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                                        <MessageSquarePlus className="w-5 h-5 text-primary" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="font-bold text-white mb-1">Help us build the Ultimate MacroLens</h3>
+                                        <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                                            We are building this for you. Tell us which features you want to see next.
+                                        </p>
+                                        <a
+                                            href="https://forms.google.com" // Placeholder
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex h-9 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-medium transition-all items-center gap-2 group"
+                                        >
+                                            Share Your Ideas
+                                            <ChevronRight className="w-3 h-3 opacity-50 group-hover:translate-x-0.5 transition-transform" />
+                                        </a>
+                                        <p className="mt-3 text-xs text-zinc-600">
+                                            Join our community of builders and early testers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </motion.div>
 
