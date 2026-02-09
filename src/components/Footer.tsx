@@ -1,6 +1,6 @@
 "use client";
 
-import { Instagram, Twitter, Github } from "lucide-react";
+import { Instagram, Twitter, Github, Coffee } from "lucide-react";
 
 export const Footer = () => {
     return (
@@ -12,12 +12,15 @@ export const Footer = () => {
                 </div>
 
                 <div className="flex gap-8 text-zinc-500 text-sm">
+                    <a href="https://www.buymeacoffee.com/macrolens" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors font-medium text-amber-500/90 hover:text-amber-500">Support Us</a>
                     <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
                     <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-                    <a href="#" className="hover:text-primary transition-colors">Contact</a>
                 </div>
 
                 <div className="flex gap-4">
+                    <a href="https://www.buymeacoffee.com/macrolens" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl glass flex items-center justify-center hover:scale-110 transition-transform text-zinc-400 hover:text-amber-500 bg-amber-500/5 border-amber-500/20" title="Buy us a coffee">
+                        <Coffee className="w-5 h-5" />
+                    </a>
                     <a href="#" className="w-10 h-10 rounded-xl glass flex items-center justify-center hover:scale-110 transition-transform text-zinc-400 hover:text-primary">
                         <Twitter className="w-5 h-5" />
                     </a>
