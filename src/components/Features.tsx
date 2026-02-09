@@ -94,7 +94,7 @@ export const Features = () => {
                         title="Barcode Scanner"
                         description="Quick scan for instant facts. Tracking packaged snacks just got easier."
                         icon={Smartphone}
-                        imageSrc="/images/Screenshot_20260203_011035.jpg"
+                        imageSrc="/images/3.png"
                         delay={0.3}
                     />
                     <FeatureCard
@@ -109,7 +109,7 @@ export const Features = () => {
                         title="Start Tracking"
                         description="Download now and try it for free. Snap a photo, AI counts for you."
                         icon={LucideImage}
-                        imageSrc="/images/3.png"
+                        imageSrc="/images/Screenshot_20260203_011035.jpg"
                         delay={0.5}
                     />
                 </div>
