@@ -18,7 +18,7 @@ export default function Home() {
             <a href="https://www.buymeacoffee.com/macrolens" target="_blank" rel="noopener noreferrer" className="p-2 rounded-xl hover:bg-white/5 transition-colors group" title="Support Us">
               <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy Me a Coffee" className="h-6 w-auto grayscale group-hover:grayscale-0 transition-all opacity-80 group-hover:opacity-100" />
             </a>
-            <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">Features</a>
+            <a href="#waitlist" className="text-sm font-medium hover:text-primary transition-colors">Waitlist</a>
             <a href="#waitlist" className="h-9 px-4 rounded-xl bg-primary text-black text-sm font-bold hover:opacity-90 transition-all flex items-center justify-center">
               Join
             </a>
