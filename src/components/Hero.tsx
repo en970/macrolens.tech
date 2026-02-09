@@ -45,47 +45,20 @@ export const Hero = () => {
                         </p>
 
                         <div className="flex flex-col items-center lg:items-start gap-4">
-                            <form className="flex flex-col sm:flex-row gap-3 w-full max-w-md" onSubmit={(e) => e.preventDefault()}>
-                                <input
-                                    type="email"
-                                    placeholder="Enter your email"
-                                    className="flex-1 h-16 rounded-2xl glass px-5 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all border-white/10"
-                                    required
-                                />
-                                <button
-                                    type="submit"
-                                    className="h-16 px-8 rounded-2xl bg-primary text-black font-bold hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 group shadow-xl shadow-primary/20"
+                            <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
+                                <a
+                                    href="https://forms.gle/eJESejUc6mMdow5K6"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="h-16 px-8 rounded-2xl bg-primary text-black font-bold hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2 group shadow-xl shadow-primary/20 w-full sm:w-auto"
                                 >
-                                    Join Waitlist
+                                    Join Waitlist & Get 1 Month Free
                                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                </button>
-                            </form>
-
-                            <div className="mt-8 pt-8 border-t border-white/5 w-full">
-                                <div className="flex items-start gap-4">
-                                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                                        <MessageSquarePlus className="w-5 h-5 text-primary" />
-                                    </div>
-                                    <div className="flex-1">
-                                        <h3 className="font-bold text-white mb-1">Help us build the Ultimate MacroLens</h3>
-                                        <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                                            We are building this for you. Tell us which features you want to see next.
-                                        </p>
-                                        <a
-                                            href="https://forms.gle/eJESejUc6mMdow5K6"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex h-9 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-medium transition-all items-center gap-2 group"
-                                        >
-                                            Take 1-min Survey
-                                            <ChevronRight className="w-3 h-3 opacity-50 group-hover:translate-x-0.5 transition-transform" />
-                                        </a>
-                                        <p className="mt-3 text-xs text-zinc-600">
-                                            Join our community of builders and early testers.
-                                        </p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
+                            <p className="text-sm text-zinc-500 mt-4 leading-relaxed max-w-md">
+                                Help us shape the future of AI nutrition. Complete the 1-min survey to secure your spot and free month.
+                            </p>
                         </div>
                     </motion.div>
 
