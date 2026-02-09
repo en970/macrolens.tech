@@ -72,12 +72,12 @@ export const Hero = () => {
                                             We are building this for you. Tell us which features you want to see next.
                                         </p>
                                         <a
-                                            href="https://forms.google.com" // Placeholder
+                                            href="https://forms.gle/eJESejUc6mMdow5K6"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="inline-flex h-9 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-medium transition-all items-center gap-2 group"
                                         >
-                                            Share Your Ideas
+                                            Take 1-min Survey
                                             <ChevronRight className="w-3 h-3 opacity-50 group-hover:translate-x-0.5 transition-transform" />
                                         </a>
                                         <p className="mt-3 text-xs text-zinc-600">
