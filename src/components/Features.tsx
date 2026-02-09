@@ -94,7 +94,7 @@ export const Features = () => {
                         title="Barcode Scanner"
                         description="Quick scan for instant facts. Tracking packaged snacks just got easier."
                         icon={Smartphone}
-                        imageSrc="/images/barcode.jpg"
+                        imageSrc="/images/Screenshot_20260203_011035.jpg"
                         delay={0.3}
                     />
                     <FeatureCard

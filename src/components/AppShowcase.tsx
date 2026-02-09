@@ -15,7 +15,7 @@ export const AppShowcase = () => {
 
                 <div className="relative w-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-primary/10">
                     <Image
-                        src="/showcase-banner.png"
+                        src="/images/wide_playstorephotos.png"
                         alt="MacroLens App Showcase"
                         width={1920}
                         height={1080}
