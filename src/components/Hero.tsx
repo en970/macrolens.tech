@@ -4,26 +4,8 @@ import { motion } from "framer-motion";
 import { MockPhone } from "./MockPhone";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { useState, useEffect } from "react";
 
 export const Hero = () => {
-    const [count, setCount] = useState(2145);
-
-    useEffect(() => {
-        // Dynamic count logic: Increase based on time since a fixed point
-        const startDate = new Date("2026-02-01T00:00:00Z").getTime();
-        const now = Date.now();
-        const growthPerMs = 1 / (10 * 60 * 1000); // 1 join every 10 mins
-        const calculated = Math.floor(2145 + (now - startDate) * growthPerMs);
-        setCount(calculated);
-
-        const timer = setInterval(() => {
-            setCount(prev => prev + 1);
-        }, 600000); // Visual update every 10 mins
-
-        return () => clearInterval(timer);
-    }, []);
-
     return (
         <section id="waitlist" className="relative pt-32 pb-16 lg:pt-48 lg:pb-32 overflow-hidden">
             {/* Background Orbs */}
@@ -78,21 +60,6 @@ export const Hero = () => {
                                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
                             </form>
-                            <div className="flex items-center gap-4 px-2">
-                                <div className="flex -space-x-2">
-                                    {[1, 2, 3, 4].map(idx => (
-                                        <div key={idx} className="w-8 h-8 rounded-full border-2 border-[#0D0D0D] overflow-hidden bg-zinc-800">
-                                            <img src={`https://i.pravatar.cc/100?u=${idx + 42}`} alt="User" />
-                                        </div>
-                                    ))}
-                                </div>
-                                <div className="text-sm font-medium">
-                                    <span className="text-primary tabular-nums">
-                                        {count.toLocaleString()}+
-                                    </span>
-                                    <span className="text-zinc-500 ml-1">early adopters joined</span>
-                                </div>
-                            </div>
                         </div>
                     </motion.div>
 
