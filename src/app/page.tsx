@@ -1,12 +1,17 @@
+"use client";
+
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { Footer } from "@/components/Footer";
 import { AppShowcase } from "@/components/AppShowcase";
+import { useLocale } from "@/components/LocaleProvider";
 import Image from "next/image";
 
-const APP_STORE_URL = "https://apps.apple.com/app/id6756659153";
+const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.ens.macrolens.ai";
 
 export default function Home() {
+  const { t, toggleLocale, locale } = useLocale();
   return (
     <main className="min-h-screen bg-[#0D0D0D] text-white selection:bg-primary selection:text-black">
       {/* Condensed Navigation */}
@@ -22,7 +27,15 @@ export default function Home() {
             />
             <span className="text-xl font-bold tracking-tight">MacroLens</span>
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-3 items-center">
+            <button
+              type="button"
+              onClick={toggleLocale}
+              aria-label={t.nav.langSwitchAria}
+              className="h-8 px-2 rounded-md hover:bg-white/5 transition-colors text-xs font-semibold tracking-wider text-zinc-400 hover:text-white"
+            >
+              {t.nav.langSwitch}
+            </button>
             <a
               href="https://www.buymeacoffee.com/macrolens"
               target="_blank"
@@ -39,17 +52,17 @@ export default function Home() {
             </a>
             <a
               href="#features"
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="hidden sm:inline text-sm font-medium hover:text-primary transition-colors"
             >
-              Özellikler
+              {t.nav.features}
             </a>
             <a
-              href={APP_STORE_URL}
+              href={PLAY_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="h-9 px-4 rounded-xl bg-primary text-black text-sm font-bold hover:opacity-90 transition-all flex items-center justify-center"
             >
-              İndir
+              {t.nav.download}
             </a>
           </div>
         </div>
@@ -64,6 +77,9 @@ export default function Home() {
       </div>
 
       <Footer />
+
+      {/* Locale debug — remove in prod if visible. Currently hidden via display none below. */}
+      <span className="sr-only" data-locale={locale} />
     </main>
   );
 }

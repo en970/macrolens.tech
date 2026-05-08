@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/JsonLd";
+import { LocaleProvider } from "@/components/LocaleProvider";
 import { orgJsonLd, websiteJsonLd, mobileAppJsonLd } from "@/lib/seo/jsonld";
 
 const geistSans = Geist({
@@ -111,7 +112,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <JsonLd data={[orgJsonLd, websiteJsonLd, mobileAppJsonLd]} />
-        {children}
+        <LocaleProvider>{children}</LocaleProvider>
       </body>
     </html>
   );
