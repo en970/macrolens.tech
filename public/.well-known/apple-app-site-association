@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["6756659153.com.ens.macrolens.ai"],
+        "components": [
+          { "/": "/blog/*" },
+          { "/": "/share/*" }
+        ]
+      }
+    ]
+  }
+}
